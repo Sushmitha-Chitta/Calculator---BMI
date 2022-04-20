@@ -1,5 +1,6 @@
 function give_me_bmi(height, weight) {
     bmi = (weight / (height * height)) * 703
+    print(bmi)
     if (bmi < 18.5) {
         return 'underweight'
     } else if (bmi >=18.5 && bmi < 24.9) {
@@ -22,7 +23,7 @@ document.getElementById('bmiButton').onclick = function(){
     bmi = give_me_bmi(height = height,weight = weight)
     console.log("BMI:"+ bmi);
 
-    document.getElementById('output').innerHTML = "Your BMI is: "+bmi
+    document.getElementById('output').innerHTML = "You are: "+bmi
 }
 document.getElementById('bmireset').onclick=function(){
     document.getElementById('output').innerHTML= ""
