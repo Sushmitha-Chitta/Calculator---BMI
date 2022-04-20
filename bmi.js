@@ -1,5 +1,5 @@
 function give_me_bmi(height, weight) {
-    bmi = (weight / height ** 2) * 703
+    bmi = (weight / (height * height)) * 703
     if (bmi < 18.5) {
         return 'underweight'
     } else if (bmi >=18.5 && bmi < 24.9) {
