@@ -1,6 +1,5 @@
 function give_me_bmi(height, weight) {
     bmi = (weight / (height * height)) * 703
-    print(bmi)
     if (bmi < 18.5) {
         return 'underweight'
     } else if (bmi >=18.5 && bmi < 24.9) {
@@ -10,7 +9,7 @@ function give_me_bmi(height, weight) {
     } else if (bmi >30) {
         return 'obese'
     } else
-     return alert('please enter the values')
+     return alert('please enter the valid inputs')
 }
 
 
